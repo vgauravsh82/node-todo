@@ -1,0 +1,6 @@
+/.vscode/launch.json
+/fileupload/*
+/node_modules/*
+/package-lock.json
+/bin/www
+/uploads/
