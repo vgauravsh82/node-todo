@@ -9,3 +9,4 @@ Hi, It is sample Todo application created as a POC for node.js and express appli
 - Seperate analytics api to support summary functions. {analytics.js}
 - Async file read and write. {filestream.js}
 - File upload function using multer {app.js}
+- Added a logger and scheduler.
