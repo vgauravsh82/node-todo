@@ -109,7 +109,6 @@ app.get('/analytics/added', analytics.added);
 app.get('/analytics/completed', analytics.completed);
 app.get('/analytics/deleted', analytics.deleted);
 app.get('/analytics/summary', analytics.summary);
-app.get('/analytics/report5Days', analytics.report5Days);
 
 app.get('/file/stream', function (req, res) {
   filestream.read();
