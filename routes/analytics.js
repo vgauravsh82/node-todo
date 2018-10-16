@@ -36,3 +36,16 @@ exports.summary = function(req, res){
     );
     
 }
+
+exports.report5Days = function(req,res){
+    Event.aggregate([
+        { "$match": { "createTime": { $gte: {"$date" : "2018-09-09"  } } }},
+        { $group: {_id: "$eventType", total: {$sum : "$count"}}}
+    ],
+    function(err, results){
+        if(err) res.status(200).json({message: err.name});
+        console.log(results);   
+        res.json(results); 
+    }
+    );
+}
